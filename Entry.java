@@ -2,7 +2,7 @@ public class Entry {
 	//instance variables
 	private String firstName;
 	private String lastName;
-	private int phoneNumber;
+	private long phoneNumber;
 	private String emailAddress;
 	
 	//getter methods
@@ -14,7 +14,7 @@ public class Entry {
 		return lastName;
 	}
 	
-	public int getPhoneNumber() {
+	public long getPhoneNumber() {
 		return phoneNumber;
 	}
 	
@@ -31,7 +31,7 @@ public class Entry {
 		lastName = name;
 	}
 	
-	public void setPhoneNumber(int num) {
+	public void setPhoneNumber(long num) {
 		phoneNumber = num;
 	}
 	
@@ -47,7 +47,7 @@ public class Entry {
 		emailAddress = "";
 	}
 	
-	public Entry(String first, String last, int phone, String email) {
+	public Entry(String first, String last, long phone, String email) {
 		firstName = first;
 		lastName = last;
 		phoneNumber = phone;
@@ -57,7 +57,7 @@ public class Entry {
 	//toString method
 	public String toString() {
 		String result;
-		result = "\n************" + "\nFirst Name: " + firstName + "\nLast Name: " + lastName + "\nPhone Number: " + phoneNumber + "\nEmail: " + emailAddress + "\n************";
+		result = "\n************" + "\nFirst Name: " + firstName + "\nLast Name: " + lastName + "\nPhone Number: " + phoneNumber + "\nEmail: " + emailAddress + "\n************\n";
 		return result;
 	}
 }
